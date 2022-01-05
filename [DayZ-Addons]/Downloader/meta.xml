@@ -1,0 +1,623 @@
+<meta>
+    <info author="Hades" name="Sistema de descargas en segundo plano" version="Sold"/>
+
+		<script src="client.lua" type="client" cache="false"/>
+        <file src="Fuentes/WorkSans.ttf" cache="false"  />
+		
+		<!-- SE DEBE PONER EL DATO DE LOS ARCHIVOS DE LA SIGUIENTE MANERA:
+			<file src="filename.txd" download="false" />
+			<file src="filename.dff" download="false" />
+		-->
+
+			<file src="models/weap/Cuchillo.txd" download="false" cache="false" />
+			<file src="models/weap/Cuchillo.dff" download="false" cache="false" />
+
+			<file src="models/weap/Hacha.txd" download="false" />
+			<file src="models/weap/Hacha.dff" download="false" />
+
+			<file src="models/weap/Machete.txd" download="false" />
+			<file src="models/weap/Machete.dff" download="false" />
+
+			<file src="models/weap/Palanca.txd" download="false" />
+			<file src="models/weap/Palanca.dff" download="false" />
+
+            <file src="models/weap/Binoculares.txd" download="false" />
+            <file src="models/weap/Binoculares.dff" download="false" />
+
+            <file src="models/weap/Parachute.txd" download="false" />
+            <file src="models/weap/Parachute.dff" download="false" />
+
+			<file src="models/weap/Desert.txd" download="false" />
+			<file src="models/weap/Desert.dff" download="false" />
+
+			<file src="models/weap/G17.txd" download="false" />
+			<file src="models/weap/G17.dff" download="false" />
+
+			<file src="models/weap/M9.txd" download="false" />
+			<file src="models/weap/M9.dff" download="false" />
+
+			<file src="models/weap/M9SD.txd" download="false" />
+			<file src="models/weap/M9SD.dff" download="false" />
+        	
+        	<file src="models/weap/M1911.txd" download="false" />
+			<file src="models/weap/M1911.dff" download="false" />
+
+            <file src="models/weap/AA12.txd" download="false" />
+            <file src="models/weap/AA12.dff" download="false" />
+        	 
+        	<file src="models/weap/MP5A5.txd" download="false" />
+			<file src="models/weap/MP5A5.dff" download="false" />
+        	
+        	<file src="models/weap/MP5SD6.txd" download="false" />
+			<file src="models/weap/MP5SD6.dff" download="false" />
+        	
+        	<file src="models/weap/BizonSD.txd" download="false" />
+			<file src="models/weap/BizonSD.dff" download="false" />
+        	
+        	<file src="models/weap/P90.txd" download="false" />
+			<file src="models/weap/P90.dff" download="false" />
+        	
+        	<file src="models/weap/AR-15.txd" download="false" />
+			<file src="models/weap/AR-15.dff" download="false" />
+        	
+        	<file src="models/weap/ACR.txd" download="false" />
+			<file src="models/weap/ACR.dff" download="false" />
+        	
+        	<file src="models/weap/AK47Vulcan.txd" download="false" />
+			<file src="models/weap/AK47Vulcan.dff" download="false" />
+        	
+        	<file src="models/weap/AK74.txd" download="false" />
+			<file src="models/weap/AK74.dff" download="false" />
+        	
+        	<file src="models/weap/AK74GP25.txd" download="false" />
+			<file src="models/weap/AK74GP25.dff" download="false" />
+        	
+        	<file src="models/weap/AK-107.txd" download="false" />
+			<file src="models/weap/AK-107.dff" download="false" />
+        	
+        	<file src="models/weap/AK-107GL.txd" download="false" />
+			<file src="models/weap/AK-107GL.dff" download="false" />
+        	
+        	<file src="models/weap/AK-107GLPSO.txd" download="false" />
+			<file src="models/weap/AK-107GLPSO.dff" download="false" />
+        	
+        	<file src="models/weap/AK-107PSO.txd" download="false" />
+			<file src="models/weap/AK-107PSO.dff" download="false" />
+        	
+        	<file src="models/weap/AKM.txd" download="false" />
+			<file src="models/weap/AKM.dff" download="false" />
+        	
+        	<file src="models/weap/AKS.txd" download="false" />
+			<file src="models/weap/AKS.dff" download="false" />
+        	
+        	<file src="models/weap/AKS-74Kobra.txd" download="false" />
+			<file src="models/weap/AKS-74Kobra.dff" download="false" />
+        	
+        	<file src="models/weap/AKSGold.txd" download="false" />
+			<file src="models/weap/AKSGold.dff" download="false" />
+        	
+        	<file src="models/weap/G36.txd" download="false" />
+			<file src="models/weap/G36.dff" download="false" />
+        	
+        	<file src="models/weap/G36A.txd" download="false" />
+			<file src="models/weap/G36A.dff" download="false" />
+        	
+        	<file src="models/weap/G36C.txd" download="false" />
+			<file src="models/weap/G36C.dff" download="false" />
+        	
+			<file src="models/weap/G36CSD.txd" download="false" />
+			<file src="models/weap/G36CSD.dff" download="false" />
+        	
+        	<file src="models/weap/G36K.txd" download="false" />
+			<file src="models/weap/G36K.dff" download="false" />
+        	
+        	<file src="models/weap/M4A1.txd" download="false" />
+			<file src="models/weap/M4A1.dff" download="false" />
+        	
+        	<file src="models/weap/M4A1CCO.txd" download="false" />
+			<file src="models/weap/M4A1CCO.dff" download="false" />
+        	
+        	<file src="models/weap/M4A1CCOSD.txd" download="false" />
+			<file src="models/weap/M4A1CCOSD.dff" download="false" />
+
+            <file src="models/weap/RPK.txd" download="false" />
+            <file src="models/weap/RPK.dff" download="false" />
+        	
+        	<file src="models/weap/M4A3CCO.txd" download="false" />
+			<file src="models/weap/M4A3CCO.dff" download="false" />
+
+            <file src="models/weap/M240.txd" download="false" />
+            <file src="models/weap/M240.dff" download="false" />
+
+        	<file src="models/weap/M249.txd" download="false" />
+			<file src="models/weap/M249.dff" download="false" />
+        	
+        	<file src="models/weap/Mk48.txd" download="false" />
+			<file src="models/weap/Mk48.dff" download="false" />
+        	
+        	<file src="models/weap/PKM.txd" download="false" />
+			<file src="models/weap/PKM.dff" download="false" />
+        	
+        	<file src="models/weap/PKP.txd" download="false" />
+			<file src="models/weap/PKP.dff" download="false" />
+        	
+        	<file src="models/weap/RPD.txd" download="false" />
+			<file src="models/weap/RPD.dff" download="false" />
+        	
+        	<file src="models/weap/AS50.txd" download="false" />
+			<file src="models/weap/AS50.dff" download="false" />
+        	
+        	<file src="models/weap/AWP.txd" download="false" />
+			<file src="models/weap/AWP.dff" download="false" />
+        	
+        	<file src="models/weap/DMR.txd" download="false" />
+			<file src="models/weap/DMR.dff" download="false" />
+        	
+        	<file src="models/weap/HecateII.txd" download="false" />
+			<file src="models/weap/HecateII.dff" download="false" />
+        	
+        	<file src="models/weap/KSVK.txd" download="false" />
+			<file src="models/weap/KSVK.dff" download="false" />
+        	
+        	<file src="models/weap/M107.txd" download="false" />
+			<file src="models/weap/M107.dff" download="false" />
+        	
+        	<file src="models/weap/SVDCamo.txd" download="false" />
+			<file src="models/weap/SVDCamo.dff" download="false" />
+
+
+
+
+            <file src="models/estruc/KK555.txd" download="false" />
+            <file src="models/estruc/KK555.dff" download="false" />
+            <file src="models/estruc/KK555.col" download="false" />
+
+            <file src="models/estruc/kk111.txd" download="false" />
+            <file src="models/estruc/kk111.dff" download="false" />
+            <file src="models/estruc/kk111.col" download="false" />
+
+            <file src="models/estruc/L130.txd" download="false" />
+            <file src="models/estruc/L130.dff" download="false" />
+            <file src="models/estruc/L130.col" download="false" />
+
+            <file src="models/estruc/K133.txd" download="false" />
+            <file src="models/estruc/K133.dff" download="false" />
+            <file src="models/estruc/K133.col" download="false" />
+
+            <file src="models/estruc/K132.txd" download="false" />
+            <file src="models/estruc/K132.dff" download="false" />
+            <file src="models/estruc/K132.col" download="false" />
+
+            <file src="models/estruc/K26.txd" download="false" />
+            <file src="models/estruc/K26.dff" download="false" />
+            <file src="models/estruc/K26.col" download="false" />
+
+            <file src="models/estruc/K33.txd" download="false" />
+            <file src="models/estruc/K33.dff" download="false" />
+            <file src="models/estruc/K33.col" download="false" />
+
+            <file src="models/estruc/043.txd" download="false" />
+            <file src="models/estruc/043.dff" download="false" />
+            <file src="models/estruc/043.col" download="false" />
+
+            <file src="models/estruc/033.txd" download="false" />
+            <file src="models/estruc/033.dff" download="false" />
+            <file src="models/estruc/033.col" download="false" />
+
+            <file src="models/estruc/eelkalol.txd" download="false" />
+            <file src="models/estruc/eelkalol.dff" download="false" />
+
+            <file src="models/estruc/eelkalol1.txd" download="false" />
+            <file src="models/estruc/eelkalol1.dff" download="false" />
+
+            <file src="models/estruc/eelkalol2.txd" download="false" />
+            <file src="models/estruc/eelkalol2.dff" download="false" />
+
+            <file src="models/estruc/object777.txd" download="false" />
+            <file src="models/estruc/object777.dff" download="false" />
+            <file src="models/estruc/object777.col" download="false" />
+
+            <file src="models/estruc/K92.txd" download="false" />
+            <file src="models/estruc/K92.dff" download="false" />
+            <file src="models/estruc/K92.col" download="false" />
+
+            <file src="models/estruc/object33333333333.txd" download="false" />
+            <file src="models/estruc/object33333333333.dff" download="false" />
+            <file src="models/estruc/object33333333333.col" download="false" />
+
+            <file src="models/estruc/object11.txd" download="false" />
+            <file src="models/estruc/object11.dff" download="false" />
+            <file src="models/estruc/object11.col" download="false" />
+
+            <file src="models/estruc/object98.txd" download="false" />
+            <file src="models/estruc/object98.dff" download="false" />
+            <file src="models/estruc/object98.col" download="false" />
+
+            <file src="models/estruc/tower.txd" download="false" />
+            <file src="models/estruc/tower.dff" download="false" />
+            <file src="models/estruc/tower.col" download="false" />
+
+            <file src="models/estruc/blocklong.txd" download="false" />
+            <file src="models/estruc/blocklong.dff" download="false" />
+            <file src="models/estruc/blocklong.col" download="false" />
+
+            <file src="models/estruc/camonet.txd" download="false" />
+            <file src="models/estruc/camonet.dff" download="false" />
+            <file src="models/estruc/camonet.col" download="false" />
+
+            <file src="models/estruc/camonet2.txd" download="false" />
+            <file src="models/estruc/camonet2.dff" download="false" />
+            <file src="models/estruc/camonet2.col" download="false" />
+
+            <file src="models/estruc/tent.txd" download="false" />
+            <file src="models/estruc/tent.dff" download="false" />
+            <file src="models/estruc/tent.col" download="false" />
+
+            <file src="models/estruc/object.txd" download="false" />
+            <file src="models/estruc/object.dff" download="false" />
+            <file src="models/estruc/object.col" download="false" />
+
+            <file src="models/estruc/01a7.txd" download="false" />
+            <file src="models/estruc/01a7.dff" download="false" />
+            <file src="models/estruc/01a7.col" download="false" />
+
+            <file src="models/estruc/zonabox3.txd" download="false" />
+            <file src="models/estruc/zonabox3.dff" download="false" />
+            <file src="models/estruc/zonabox3.col" download="false" />
+
+            <file src="models/estruc/zonabox6.txd" download="false" />
+            <file src="models/estruc/zonabox6.dff" download="false" />
+            <file src="models/estruc/zonabox6.col" download="false" />
+
+            <file src="models/estruc/1.txd" download="false" />
+            <file src="models/estruc/1.dff" download="false" />
+            <file src="models/estruc/1.col" download="false" />
+
+            <file src="models/estruc/hospital_law.txd" download="false" />
+            <file src="models/estruc/hospital_law.dff" download="false" />
+            <file src="models/estruc/hospital_law.col" download="false" />
+
+            <file src="models/estruc/obj1.txd" download="false" />
+            <file src="models/estruc/obj1.dff" download="false" />
+            <file src="models/estruc/obj1.col" download="false" />
+
+            <file src="models/estruc/obj2.txd" download="false" />
+            <file src="models/estruc/obj2.dff" download="false" />
+            <file src="models/estruc/obj2.col" download="false" />
+
+            <file src="models/estruc/obj3.txd" download="false" />
+            <file src="models/estruc/obj3.dff" download="false" />
+            <file src="models/estruc/obj3.col" download="false" />
+
+            <file src="models/estruc/obj4.txd" download="false" />
+            <file src="models/estruc/obj4.dff" download="false" />
+            <file src="models/estruc/obj4.col" download="false" />
+
+            <file src="models/estruc/obj6.txd" download="false" />
+            <file src="models/estruc/obj6.dff" download="false" />
+            <file src="models/estruc/obj6.col" download="false" />
+
+            <file src="models/estruc/obj7.txd" download="false" />
+            <file src="models/estruc/obj7.dff" download="false" />
+            <file src="models/estruc/obj7.col" download="false" />
+
+            <file src="models/estruc/obj10.txd" download="false" />
+            <file src="models/estruc/obj10.dff" download="false" />
+            <file src="models/estruc/obj10.col" download="false" />
+
+            <file src="models/estruc/obj11.txd" download="false" />
+            <file src="models/estruc/obj11.dff" download="false" />
+            <file src="models/estruc/obj11.col" download="false" />
+
+            <file src="models/estruc/obj12.txd" download="false" />
+            <file src="models/estruc/obj12.dff" download="false" />
+            <file src="models/estruc/obj12.col" download="false" />
+
+            <file src="models/estruc/obj13.txd" download="false" />
+            <file src="models/estruc/obj13.dff" download="false" />
+            <file src="models/estruc/obj13.col" download="false" />
+
+            <file src="models/estruc/obj14.txd" download="false" />
+            <file src="models/estruc/obj14.dff" download="false" />
+            <file src="models/estruc/obj14.col" download="false" />
+
+            <file src="models/estruc/obj15.txd" download="false" />
+            <file src="models/estruc/obj15.dff" download="false" />
+            <file src="models/estruc/obj15.col" download="false" />
+
+            <file src="models/estruc/obj16.txd" download="false" />
+            <file src="models/estruc/obj16.dff" download="false" />
+            <file src="models/estruc/obj16.col" download="false" />
+
+            <file src="models/estruc/obj17.txd" download="false" />
+            <file src="models/estruc/obj17.dff" download="false" />
+            <file src="models/estruc/obj17.col" download="false" />
+
+            <file src="models/estruc/obj18.txd" download="false" />
+            <file src="models/estruc/obj18.dff" download="false" />
+            <file src="models/estruc/obj18.col" download="false" />
+
+            <file src="models/estruc/obj19.txd" download="false" />
+            <file src="models/estruc/obj19.dff" download="false" />
+            <file src="models/estruc/obj19.col" download="false" />
+
+            <file src="models/estruc/obj21.txd" download="false" />
+            <file src="models/estruc/obj21.dff" download="false" />
+            <file src="models/estruc/obj21.col" download="false" />
+
+            <file src="models/estruc/obj23.txd" download="false" />
+            <file src="models/estruc/obj23.dff" download="false" />
+            <file src="models/estruc/obj23.col" download="false" />
+
+            <file src="models/estruc/obj24.txd" download="false" />
+            <file src="models/estruc/obj24.dff" download="false" />
+            <file src="models/estruc/obj24.col" download="false" />
+
+            <file src="models/estruc/obj26.txd" download="false" />
+            <file src="models/estruc/obj26.dff" download="false" />
+            <file src="models/estruc/obj26.col" download="false" />
+
+            <file src="models/estruc/obj29.txd" download="false" />
+            <file src="models/estruc/obj29.dff" download="false" />
+            <file src="models/estruc/obj29.col" download="false" />
+
+            <file src="models/estruc/obj30.txd" download="false" />
+            <file src="models/estruc/obj30.dff" download="false" />
+            <file src="models/estruc/obj30.col" download="false" />
+
+            <file src="models/estruc/obj31.txd" download="false" />
+            <file src="models/estruc/obj31.dff" download="false" />
+            <file src="models/estruc/obj31.col" download="false" />
+
+            <file src="models/estruc/obj32.txd" download="false" />
+            <file src="models/estruc/obj32.dff" download="false" />
+            <file src="models/estruc/obj32.col" download="false" />
+
+            <file src="models/estruc/obj35.txd" download="false" />
+            <file src="models/estruc/obj35.dff" download="false" />
+            <file src="models/estruc/obj35.col" download="false" />
+
+            <file src="models/estruc/obj36.txd" download="false" />
+            <file src="models/estruc/obj36.dff" download="false" />
+            <file src="models/estruc/obj36.col" download="false" />
+
+            <file src="models/estruc/obj37.txd" download="false" />
+            <file src="models/estruc/obj37.dff" download="false" />
+            <file src="models/estruc/obj37.col" download="false" />
+
+            <file src="models/estruc/obj38.txd" download="false" />
+            <file src="models/estruc/obj38.dff" download="false" />
+            <file src="models/estruc/obj38.col" download="false" />
+
+            <file src="models/estruc/obj41.txd" download="false" />
+            <file src="models/estruc/obj41.dff" download="false" />
+            <file src="models/estruc/obj41.col" download="false" />
+
+            <file src="models/estruc/obj42.txd" download="false" />
+            <file src="models/estruc/obj42.dff" download="false" />
+            <file src="models/estruc/obj42.col" download="false" />
+
+            <file src="models/estruc/obj43.txd" download="false" />
+            <file src="models/estruc/obj43.dff" download="false" />
+            <file src="models/estruc/obj43.col" download="false" />
+
+            <file src="models/estruc/obj44.txd" download="false" />
+            <file src="models/estruc/obj44.dff" download="false" />
+            <file src="models/estruc/obj44.col" download="false" />
+
+            <file src="models/estruc/obj46.txd" download="false" />
+            <file src="models/estruc/obj46.dff" download="false" />
+            <file src="models/estruc/obj46.col" download="false" />
+
+            <file src="models/estruc/obj47.txd" download="false" />
+            <file src="models/estruc/obj47.dff" download="false" />
+            <file src="models/estruc/obj47.col" download="false" />
+
+            <file src="models/estruc/obj48.txd" download="false" />
+            <file src="models/estruc/obj48.dff" download="false" />
+            <file src="models/estruc/obj48.col" download="false" />
+
+            <file src="models/estruc/obj49.txd" download="false" />
+            <file src="models/estruc/obj49.dff" download="false" />
+            <file src="models/estruc/obj49.col" download="false" />
+
+            <file src="models/estruc/obj50.txd" download="false" />
+            <file src="models/estruc/obj50.dff" download="false" />
+            <file src="models/estruc/obj50.col" download="false" />
+
+            <file src="models/estruc/obj51.txd" download="false" />
+            <file src="models/estruc/obj51.dff" download="false" />
+            <file src="models/estruc/obj51.col" download="false" />
+
+            <file src="models/estruc/198.txd" download="false" />
+            <file src="models/estruc/198.dff" download="false" />
+            <file src="models/estruc/198.col" download="false" />
+
+            <file src="models/estruc/201.txd" download="false" />
+            <file src="models/estruc/201.dff" download="false" />
+            <file src="models/estruc/201.col" download="false" />
+
+            <file src="models/estruc/202.txd" download="false" />
+            <file src="models/estruc/202.dff" download="false" />
+            <file src="models/estruc/202.col" download="false" />
+
+            <file src="models/estruc/207.txd" download="false" />
+            <file src="models/estruc/207.dff" download="false" />
+            <file src="models/estruc/207.col" download="false" />
+
+            <file src="models/estruc/208.txd" download="false" />
+            <file src="models/estruc/208.dff" download="false" />
+            <file src="models/estruc/208.col" download="false" />
+
+            <file src="models/estruc/211.txd" download="false" />
+            <file src="models/estruc/211.dff" download="false" />
+            <file src="models/estruc/211.col" download="false" />
+
+            <file src="models/estruc/219.txd" download="false" />
+            <file src="models/estruc/219.dff" download="false" />
+            <file src="models/estruc/219.col" download="false" />
+
+            <file src="models/estruc/220.txd" download="false" />
+            <file src="models/estruc/220.dff" download="false" />
+            <file src="models/estruc/220.col" download="false" />
+
+            <file src="models/estruc/225.txd" download="false" />
+            <file src="models/estruc/225.dff" download="false" />
+            <file src="models/estruc/225.col" download="false" />
+
+            <file src="models/estruc/234.txd" download="false" />
+            <file src="models/estruc/234.dff" download="false" />
+            <file src="models/estruc/234.col" download="false" />
+
+            <file src="models/estruc/237.txd" download="false" />
+            <file src="models/estruc/237.dff" download="false" />
+            <file src="models/estruc/237.col" download="false" />
+
+            <file src="models/estruc/240.txd" download="false" />
+            <file src="models/estruc/240.dff" download="false" />
+            <file src="models/estruc/240.col" download="false" />
+
+            <file src="models/estruc/243.txd" download="false" />
+            <file src="models/estruc/243.dff" download="false" />
+            <file src="models/estruc/243.col" download="false" />
+
+            <file src="models/estruc/246.txd" download="false" />
+            <file src="models/estruc/246.dff" download="false" />
+            <file src="models/estruc/246.col" download="false" />
+
+            <file src="models/estruc/249.txd" download="false" />
+            <file src="models/estruc/249.dff" download="false" />
+            <file src="models/estruc/249.col" download="false" />
+
+            <file src="models/estruc/252.txd" download="false" />
+            <file src="models/estruc/252.dff" download="false" />
+            <file src="models/estruc/252.col" download="false" />
+
+            <file src="models/estruc/255.txd" download="false" />
+            <file src="models/estruc/255.dff" download="false" />
+            <file src="models/estruc/255.col" download="false" />
+
+            <file src="models/estruc/258.txd" download="false" />
+            <file src="models/estruc/258.dff" download="false" />
+            <file src="models/estruc/258.col" download="false" />
+
+            <file src="models/estruc/264.txd" download="false" />
+            <file src="models/estruc/264.dff" download="false" />
+            <file src="models/estruc/264.col" download="false" />
+
+            <file src="models/estruc/267.txd" download="false" />
+            <file src="models/estruc/267.dff" download="false" />
+            <file src="models/estruc/267.col" download="false" />
+
+            <file src="models/estruc/270.txd" download="false" />
+            <file src="models/estruc/270.dff" download="false" />
+            <file src="models/estruc/270.col" download="false" />
+
+            <file src="models/estruc/276.txd" download="false" />
+            <file src="models/estruc/276.dff" download="false" />
+            <file src="models/estruc/276.col" download="false" />
+
+            <file src="models/estruc/279.txd" download="false" />
+            <file src="models/estruc/279.dff" download="false" />
+            <file src="models/estruc/279.col" download="false" />
+
+            <file src="models/estruc/282.txd" download="false" />
+            <file src="models/estruc/282.dff" download="false" />
+            <file src="models/estruc/282.col" download="false" />
+
+            <file src="models/estruc/288.txd" download="false" />
+            <file src="models/estruc/288.dff" download="false" />
+            <file src="models/estruc/288.col" download="false" />
+
+            <file src="models/estruc/294.txd" download="false" />
+            <file src="models/estruc/294.dff" download="false" />
+            <file src="models/estruc/294.col" download="false" />
+
+            <file src="models/estruc/300.txd" download="false" />
+            <file src="models/estruc/300.dff" download="false" />
+            <file src="models/estruc/300.col" download="false" />
+
+            <file src="models/estruc/303.txd" download="false" />
+            <file src="models/estruc/303.dff" download="false" />
+            <file src="models/estruc/303.col" download="false" />
+
+            <file src="models/estruc/306.txd" download="false" />
+            <file src="models/estruc/306.dff" download="false" />
+            <file src="models/estruc/306.col" download="false" />
+
+            <file src="models/estruc/309.txd" download="false" />
+            <file src="models/estruc/309.dff" download="false" />
+            <file src="models/estruc/309.col" download="false" />
+
+            <file src="models/estruc/312.txd" download="false" />
+            <file src="models/estruc/312.dff" download="false" />
+            <file src="models/estruc/312.col" download="false" />
+
+            <file src="models/estruc/315.txd" download="false" />
+            <file src="models/estruc/315.dff" download="false" />
+            <file src="models/estruc/315.col" download="false" />
+
+            <file src="models/estruc/318.txd" download="false" />
+            <file src="models/estruc/318.dff" download="false" />
+            <file src="models/estruc/318.col" download="false" />
+
+            <file src="models/estruc/321.txd" download="false" />
+            <file src="models/estruc/321.dff" download="false" />
+            <file src="models/estruc/321.col" download="false" />
+
+            <file src="models/estruc/324.txd" download="false" />
+            <file src="models/estruc/324.dff" download="false" />
+            <file src="models/estruc/324.col" download="false" />
+
+            <file src="models/estruc/327.txd" download="false" />
+            <file src="models/estruc/327.dff" download="false" />
+            <file src="models/estruc/327.col" download="false" />
+
+            <file src="models/estruc/333.txd" download="false" />
+            <file src="models/estruc/333.dff" download="false" />
+            <file src="models/estruc/333.col" download="false" />
+
+            <file src="models/estruc/330.txd" download="false" />
+            <file src="models/estruc/330.dff" download="false" />
+            <file src="models/estruc/330.col" download="false" />
+
+            <file src="models/estruc/582.txd" download="false" />
+            <file src="models/estruc/582.dff" download="false" />
+            <file src="models/estruc/582.col" download="false" />
+
+            <file src="models/estruc/585.txd" download="false" />
+            <file src="models/estruc/585.dff" download="false" />
+            <file src="models/estruc/585.col" download="false" />
+
+            <file src="models/estruc/597.txd" download="false" />
+            <file src="models/estruc/597.dff" download="false" />
+            <file src="models/estruc/597.col" download="false" />
+
+            <file src="loader/loading0.png"/>
+            <file src="loader/loading1.png"/>
+            <file src="loader/loading2.png"/>
+            <file src="loader/loading3.png"/>
+            <file src="loader/loading4.png"/>
+            <file src="loader/loading5.png"/>
+            <file src="loader/loading6.png"/>
+            <file src="loader/loading7.png"/>
+            <file src="loader/loading8.png"/>
+            <file src="loader/loading9.png"/>
+            <file src="loader/loading10.png"/>
+            <file src="loader/loading11.png"/>
+            <file src="loader/loading12.png"/>
+            <file src="loader/loading13.png"/>
+            <file src="loader/loading14.png"/>
+            <file src="loader/loading15.png"/>
+            <file src="loader/loading16.png"/>
+            <file src="loader/loading17.png"/>
+            <file src="loader/loading18.png"/>
+            <file src="loader/loading19.png"/>
+            <file src="loader/loading20.png"/>
+            <file src="loader/loading21.png"/>
+            <file src="loader/loading22.png"/>
+            <file src="loader/loading23.png"/>
+
+
+
+</meta>

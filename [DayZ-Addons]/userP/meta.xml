@@ -1,0 +1,517 @@
+<meta>
+<script src="userPanel_c.lua" type="client" cache="false"/>
+<script src="userPanel_s.lua" type="server"/>
+<oop>true</oop>
+
+
+
+<!--DYNAMIC SKY-->
+	<script src="[Dynamic-Sky]/c_main.lua" type="client" />
+	<script src="[Dynamic-Sky]/c_helper_functions.lua" type="client" />
+	<script src="[Dynamic-Sky]/c_switch.lua" type="client" />
+	<file src="[Dynamic-Sky]/fx/shader_dynamicSky2tropos.fx" type="client" />
+	<file src="[Dynamic-Sky]/fx/shader_dynamicSky2stratos.fx" type="client" />
+	<file src="[Dynamic-Sky]/fx/shader_dynamicSky2up.fx" type="client" />
+	<file src="[Dynamic-Sky]/fx/shader_dynamicSky2bottom.fx" type="client" />
+	<file src="[Dynamic-Sky]/fx/shader_dynamicSky2down.fx" type="client" />
+	<file src="[Dynamic-Sky]/fx/shader_clear.fx" type="client" />
+	<file src="[Dynamic-Sky]/tex/skybox.dds" type="client" />
+	<file src="[Dynamic-Sky]/tex/clouds.dds" type="client" />
+	<file src="[Dynamic-Sky]/tex/clouds_normal.jpg" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/0.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/1.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/10.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/11.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/12.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/13.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/14.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/15.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/16.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/17.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/18.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/19.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/2.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/20.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/3.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/4.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/5.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/6.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/7.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/8.png" type="client" />
+	<file src="[Dynamic-Sky]/tex/moon/9.png" type="client" />
+	<file src="[Dynamic-Sky]/dff/skybox_model.dff" type="client" />
+	<file src="[Dynamic-Sky]/tex/skybox_model.txd" type="client" />
+	<export function="getDynamicSunVector" type="client" />
+	<export function="getDynamicMoonVector" type="client" />
+	<export function="getMoonPhaseValue" type="client" />
+	<export function="isDynamicSkyEnabled" type="client" />
+
+
+	<!--EFECTOS REALISTAS-->
+	<script src="[Realistic-Effects]/shader.lua" type="client" />	
+	<file src="[Realistic-Effects]/shader/shader.fx" />
+	<file src="[Realistic-Effects]/img/afterburner.png" />
+	<file src="[Realistic-Effects]/img/ashes.png" />
+	<file src="[Realistic-Effects]/img/ashes2.png" />
+	<file src="[Realistic-Effects]/img/beam.png" />
+	<file src="[Realistic-Effects]/img/beamcorona.png" />
+	<file src="[Realistic-Effects]/img/beastie.png" />
+	<file src="[Realistic-Effects]/img/Bgush1.png" />
+	<file src="[Realistic-Effects]/img/Bgush2.png" />
+	<file src="[Realistic-Effects]/img/Bgush3.png" />
+	<file src="[Realistic-Effects]/img/Bgush4.png" />
+	<file src="[Realistic-Effects]/img/blaze1.png" />
+	<file src="[Realistic-Effects]/img/blaze2.png" />
+	<file src="[Realistic-Effects]/img/blaze3.png" />
+	<file src="[Realistic-Effects]/img/blaze4.png" />
+	<file src="[Realistic-Effects]/img/blood1.png" />
+	<file src="[Realistic-Effects]/img/blood2.png" />
+	<file src="[Realistic-Effects]/img/blood3.png" />
+	<file src="[Realistic-Effects]/img/blood4.png" />
+	<file src="[Realistic-Effects]/img/BloodCloud.png" />
+	<file src="[Realistic-Effects]/img/blooddrop1.png" />
+	<file src="[Realistic-Effects]/img/blooddrop2.png" />
+	<file src="[Realistic-Effects]/img/blooddrop3.png" />
+	<file src="[Realistic-Effects]/img/blooddrop4.png" />
+	<file src="[Realistic-Effects]/img/BloodRayne.png" />
+	<file src="[Realistic-Effects]/img/BloodSplash.png" />
+	<file src="[Realistic-Effects]/img/Bnitro.png" />
+	<file src="[Realistic-Effects]/img/boatsplash.png" />
+	<file src="[Realistic-Effects]/img/boatwake1.png" />
+	<file src="[Realistic-Effects]/img/bsplat1.png" />
+	<file src="[Realistic-Effects]/img/bsplat2.png" />
+	<file src="[Realistic-Effects]/img/bsplat3.png" />
+	<file src="[Realistic-Effects]/img/bsplat4.png" />
+	<file src="[Realistic-Effects]/img/bsplat5.png" />
+	<file src="[Realistic-Effects]/img/bubbles.png" />
+	<file src="[Realistic-Effects]/img/bullethitsmoke.png" />
+	<file src="[Realistic-Effects]/img/bullethitsmoke1.png" />
+	<file src="[Realistic-Effects]/img/burn1.png" />
+	<file src="[Realistic-Effects]/img/burn2.png" />
+	<file src="[Realistic-Effects]/img/burn3.png" />
+	<file src="[Realistic-Effects]/img/burn4.png" />
+	<file src="[Realistic-Effects]/img/butterfly1.png" />
+	<file src="[Realistic-Effects]/img/butterfly2.png" />
+	<file src="[Realistic-Effects]/img/butterfly3.png" />
+	<file src="[Realistic-Effects]/img/By.png" />
+	<file src="[Realistic-Effects]/img/cardebris1.png" />
+	<file src="[Realistic-Effects]/img/cardebris2.png" />
+	<file src="[Realistic-Effects]/img/cardebris3.png" />
+	<file src="[Realistic-Effects]/img/cardebris4.png" />
+	<file src="[Realistic-Effects]/img/cardebris5.png" />
+	<file src="[Realistic-Effects]/img/cardebris_01.png" />
+	<file src="[Realistic-Effects]/img/cardebris_02.png" />
+	<file src="[Realistic-Effects]/img/cardebris_03.png" />
+	<file src="[Realistic-Effects]/img/cardebris_04.png" />
+	<file src="[Realistic-Effects]/img/cardebris_05.png" />
+	<file src="[Realistic-Effects]/img/carsplash_02.png" />
+	<file src="[Realistic-Effects]/img/cement.png" />
+	<file src="[Realistic-Effects]/img/cigsmoke1.png" />
+	<file src="[Realistic-Effects]/img/cigsmoke2.png" />
+	<file src="[Realistic-Effects]/img/cigsmoke3.png" />
+	<file src="[Realistic-Effects]/img/cigsmoke4.png" />
+	<file src="[Realistic-Effects]/img/cigsmoke5.png" />
+	<file src="[Realistic-Effects]/img/cloudmasked.png" />
+	<file src="[Realistic-Effects]/img/collisionsmoke.png" />
+	<file src="[Realistic-Effects]/img/coronaringa.png" />
+	<file src="[Realistic-Effects]/img/Debris1.png" />
+	<file src="[Realistic-Effects]/img/Debris2.png" />
+	<file src="[Realistic-Effects]/img/Debris3.png" />
+	<file src="[Realistic-Effects]/img/DebrisGaEX.png" />
+	<file src="[Realistic-Effects]/img/dirt1.png" />
+	<file src="[Realistic-Effects]/img/dirt2.png" />
+	<file src="[Realistic-Effects]/img/dragon.png" />
+	<file src="[Realistic-Effects]/img/drift1.png" />
+	<file src="[Realistic-Effects]/img/drift2.png" />
+	<file src="[Realistic-Effects]/img/drift3.png" />
+	<file src="[Realistic-Effects]/img/drift4.png" />
+	<file src="[Realistic-Effects]/img/driftb1.png" />
+	<file src="[Realistic-Effects]/img/driftb2.png" />
+	<file src="[Realistic-Effects]/img/driftb3.png" />
+	<file src="[Realistic-Effects]/img/driftb4.png" />
+	<file src="[Realistic-Effects]/img/Drop1.png" />
+	<file src="[Realistic-Effects]/img/Drop2.png" />
+	<file src="[Realistic-Effects]/img/dsmoke1.png" />
+	<file src="[Realistic-Effects]/img/dsmoke2.png" />
+	<file src="[Realistic-Effects]/img/dsmoke3.png" />
+	<file src="[Realistic-Effects]/img/dsmoke4.png" />
+	<file src="[Realistic-Effects]/img/electric1.png" />
+	<file src="[Realistic-Effects]/img/electric2.png" />
+	<file src="[Realistic-Effects]/img/electric3.png" />
+	<file src="[Realistic-Effects]/img/electric4.png" />
+	<file src="[Realistic-Effects]/img/electric5.png" />
+	<file src="[Realistic-Effects]/img/electric6.png" />
+	<file src="[Realistic-Effects]/img/electric7.png" />
+	<file src="[Realistic-Effects]/img/electric8.png" />
+	<file src="[Realistic-Effects]/img/Fdebris1.png" />
+	<file src="[Realistic-Effects]/img/Fdebris2.png" />
+	<file src="[Realistic-Effects]/img/Fdebris3.png" />
+	<file src="[Realistic-Effects]/img/Fdebris4.png" />
+	<file src="[Realistic-Effects]/img/feather.png" />
+	<file src="[Realistic-Effects]/img/fireball1.png" />
+	<file src="[Realistic-Effects]/img/fireball10.png" />
+	<file src="[Realistic-Effects]/img/fireball2.png" />
+	<file src="[Realistic-Effects]/img/fireball3.png" />
+	<file src="[Realistic-Effects]/img/fireball4.png" />
+	<file src="[Realistic-Effects]/img/fireball5.png" />
+	<file src="[Realistic-Effects]/img/fireball6.png" />
+	<file src="[Realistic-Effects]/img/fireball7.png" />
+	<file src="[Realistic-Effects]/img/fireball8.png" />
+	<file src="[Realistic-Effects]/img/fireball9.png" />
+	<file src="[Realistic-Effects]/img/FireEX.png" />
+	<file src="[Realistic-Effects]/img/FireFlame.png" />
+	<file src="[Realistic-Effects]/img/FireFlame3.png" />
+	<file src="[Realistic-Effects]/img/flake1.png" />
+	<file src="[Realistic-Effects]/img/flake2.png" />
+	<file src="[Realistic-Effects]/img/flame1.png" />
+	<file src="[Realistic-Effects]/img/flame2.png" />
+	<file src="[Realistic-Effects]/img/flame3.png" />
+	<file src="[Realistic-Effects]/img/flame4.png" />
+	<file src="[Realistic-Effects]/img/flamethrower.png" />
+	<file src="[Realistic-Effects]/img/flash1.png" />
+	<file src="[Realistic-Effects]/img/flash2.png" />
+	<file src="[Realistic-Effects]/img/flash3.png" />
+	<file src="[Realistic-Effects]/img/flash4.png" />
+	<file src="[Realistic-Effects]/img/fly1.png" />
+	<file src="[Realistic-Effects]/img/fly2.png" />
+	<file src="[Realistic-Effects]/img/fly3.png" />
+	<file src="[Realistic-Effects]/img/Fnitro.png" />
+	<file src="[Realistic-Effects]/img/Foliage.png" />
+	<file src="[Realistic-Effects]/img/Function-X-.png" />
+	<file src="[Realistic-Effects]/img/gameleaf01_64.png" />
+	<file src="[Realistic-Effects]/img/gensplash.png" />
+	<file src="[Realistic-Effects]/img/glassmall.png" />
+	<file src="[Realistic-Effects]/img/glowlight.png" />
+	<file src="[Realistic-Effects]/img/gore1.png" />
+	<file src="[Realistic-Effects]/img/gore2.png" />
+	<file src="[Realistic-Effects]/img/gore3.png" />
+	<file src="[Realistic-Effects]/img/gore4.png" />
+	<file src="[Realistic-Effects]/img/gum.png" />
+	<file src="[Realistic-Effects]/img/GunFlash.png" />
+	<file src="[Realistic-Effects]/img/GunFlash1.png" />
+	<file src="[Realistic-Effects]/img/GunFlash2.png" />
+	<file src="[Realistic-Effects]/img/GunFlash3.png" />
+	<file src="[Realistic-Effects]/img/GunFlash4.png" />
+	<file src="[Realistic-Effects]/img/gunshell.png" />
+	<file src="[Realistic-Effects]/img/gunsmoke.png" />
+	<file src="[Realistic-Effects]/img/headshot1.png" />
+	<file src="[Realistic-Effects]/img/headshot2.png" />
+	<file src="[Realistic-Effects]/img/headshot3.png" />
+	<file src="[Realistic-Effects]/img/headshot4.png" />
+	<file src="[Realistic-Effects]/img/headshot5.png" />
+	<file src="[Realistic-Effects]/img/inferno1.png" />
+	<file src="[Realistic-Effects]/img/inferno2.png" />
+	<file src="[Realistic-Effects]/img/inferno3.png" />
+	<file src="[Realistic-Effects]/img/inferno4.png" />
+	<file src="[Realistic-Effects]/img/inferno5.png" />
+	<file src="[Realistic-Effects]/img/inflame1.png" />
+	<file src="[Realistic-Effects]/img/inflame2.png" />
+	<file src="[Realistic-Effects]/img/inflame3.png" />
+	<file src="[Realistic-Effects]/img/inflame4.png" />
+	<file src="[Realistic-Effects]/img/inflamed1.png" />
+	<file src="[Realistic-Effects]/img/inflamed2.png" />
+	<file src="[Realistic-Effects]/img/inflamed3.png" />
+	<file src="[Realistic-Effects]/img/inflamed4.png" />
+	<file src="[Realistic-Effects]/img/laser.png" />
+	<file src="[Realistic-Effects]/img/leaf1.png" />
+	<file src="[Realistic-Effects]/img/leaf2.png" />
+	<file src="[Realistic-Effects]/img/light1.png" />
+	<file src="[Realistic-Effects]/img/light2.png" />
+	<file src="[Realistic-Effects]/img/light3.png" />
+	<file src="[Realistic-Effects]/img/light4.png" />
+	<file src="[Realistic-Effects]/img/light5.png" />
+	<file src="[Realistic-Effects]/img/light6.png" />
+	<file src="[Realistic-Effects]/img/lightning1.png" />
+	<file src="[Realistic-Effects]/img/lightning2.png" />
+	<file src="[Realistic-Effects]/img/lightning3.png" />
+	<file src="[Realistic-Effects]/img/lightning4.png" />
+	<file src="[Realistic-Effects]/img/lightning5.png" />
+	<file src="[Realistic-Effects]/img/molotov1.png" />
+	<file src="[Realistic-Effects]/img/molotov2.png" />
+	<file src="[Realistic-Effects]/img/molotov3.png" />
+	<file src="[Realistic-Effects]/img/molotov4.png" />
+	<file src="[Realistic-Effects]/img/muzzle1.png" />
+	<file src="[Realistic-Effects]/img/muzzle2.png" />
+	<file src="[Realistic-Effects]/img/muzzle3.png" />
+	<file src="[Realistic-Effects]/img/muzzle4.png" />
+	<file src="[Realistic-Effects]/img/neon.png" />
+	<file src="[Realistic-Effects]/img/NewFx1.png" />
+	<file src="[Realistic-Effects]/img/NewFx2.png" />
+	<file src="[Realistic-Effects]/img/NewFx3.png" />
+	<file src="[Realistic-Effects]/img/newspaper.png" />
+	<file src="[Realistic-Effects]/img/Overdoseeffects.png" />
+	<file src="[Realistic-Effects]/img/paper1.png" />
+	<file src="[Realistic-Effects]/img/paper2.png" />
+	<file src="[Realistic-Effects]/img/paper3.png" />
+	<file src="[Realistic-Effects]/img/paper4.png" />
+	<file src="[Realistic-Effects]/img/Pnitro.png" />
+	<file src="[Realistic-Effects]/img/pointlight.png" />
+	<file src="[Realistic-Effects]/img/puke.png" />
+	<file src="[Realistic-Effects]/img/railex.png" />
+	<file src="[Realistic-Effects]/img/rain1.png" />
+	<file src="[Realistic-Effects]/img/rain2.png" />
+	<file src="[Realistic-Effects]/img/rain3.png" />
+	<file src="[Realistic-Effects]/img/rain4.png" />
+	<file src="[Realistic-Effects]/img/realex1.png" />
+	<file src="[Realistic-Effects]/img/realex2.png" />
+	<file src="[Realistic-Effects]/img/realex3.png" />
+	<file src="[Realistic-Effects]/img/realex4.png" />
+	<file src="[Realistic-Effects]/img/realexb1.png" />
+	<file src="[Realistic-Effects]/img/realexb2.png" />
+	<file src="[Realistic-Effects]/img/realexb3.png" />
+	<file src="[Realistic-Effects]/img/realexb4.png" />
+	<file src="[Realistic-Effects]/img/realfire1.png" />
+	<file src="[Realistic-Effects]/img/realfire2.png" />
+	<file src="[Realistic-Effects]/img/realfire3.png" />
+	<file src="[Realistic-Effects]/img/realfire4.png" />
+	<file src="[Realistic-Effects]/img/rope1.png" />
+	<file src="[Realistic-Effects]/img/rope2.png" />
+	<file src="[Realistic-Effects]/img/sewersmoke.png" />
+	<file src="[Realistic-Effects]/img/smoke.png" />
+	<file src="[Realistic-Effects]/img/smoke1.png" />
+	<file src="[Realistic-Effects]/img/smoke10.png" />
+	<file src="[Realistic-Effects]/img/smoke11.png" />
+	<file src="[Realistic-Effects]/img/smoke12.png" />
+	<file src="[Realistic-Effects]/img/smoke13.png" />
+	<file src="[Realistic-Effects]/img/smoke14.png" />
+	<file src="[Realistic-Effects]/img/smoke2.png" />
+	<file src="[Realistic-Effects]/img/smoke3.png" />
+	<file src="[Realistic-Effects]/img/smoke4.png" />
+	<file src="[Realistic-Effects]/img/smoke5.png" />
+	<file src="[Realistic-Effects]/img/smoke6.png" />
+	<file src="[Realistic-Effects]/img/smoke7.png" />
+	<file src="[Realistic-Effects]/img/smoke8.png" />
+	<file src="[Realistic-Effects]/img/smoke9.png" />
+	<file src="[Realistic-Effects]/img/SmokeBlast.png" />
+	<file src="[Realistic-Effects]/img/SmokeBlast2.png" />
+	<file src="[Realistic-Effects]/img/SmokeBlast3.png" />
+	<file src="[Realistic-Effects]/img/smoked1.png" />
+	<file src="[Realistic-Effects]/img/smoked2.png" />
+	<file src="[Realistic-Effects]/img/smoked3.png" />
+	<file src="[Realistic-Effects]/img/smoked4.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX2.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX3.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX4.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX5.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX6.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX7.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX8.png" />
+	<file src="[Realistic-Effects]/img/SmokeEX9.png" />
+	<file src="[Realistic-Effects]/img/SmokeEXPand.png" />
+	<file src="[Realistic-Effects]/img/smokeII_3.png" />
+	<file src="[Realistic-Effects]/img/SmokeSand.png" />
+	<file src="[Realistic-Effects]/img/SmokeSand2.png" />
+	<file src="[Realistic-Effects]/img/Smokethrower.png" />
+	<file src="[Realistic-Effects]/img/snow1.png" />
+	<file src="[Realistic-Effects]/img/snow2.png" />
+	<file src="[Realistic-Effects]/img/snow3.png" />
+	<file src="[Realistic-Effects]/img/sonic1.png" />
+	<file src="[Realistic-Effects]/img/sonic2.png" />
+	<file src="[Realistic-Effects]/img/sparkdebris1.png" />
+	<file src="[Realistic-Effects]/img/sparkdebris2.png" />
+	<file src="[Realistic-Effects]/img/sparkdebris3.png" />
+	<file src="[Realistic-Effects]/img/sparkdebris4.png" />
+	<file src="[Realistic-Effects]/img/Sparks.png" />
+	<file src="[Realistic-Effects]/img/Sparks2.png" />
+	<file src="[Realistic-Effects]/img/Sparks3.png" />
+	<file src="[Realistic-Effects]/img/Sparks4.png" />
+	<file src="[Realistic-Effects]/img/Sparks5.png" />
+	<file src="[Realistic-Effects]/img/Sparks6.png" />
+	<file src="[Realistic-Effects]/img/Sparks7.png" />
+	<file src="[Realistic-Effects]/img/SparksFlash.png" />
+	<file src="[Realistic-Effects]/img/sphere.png" />
+	<file src="[Realistic-Effects]/img/sphere_CJ.png" />
+	<file src="[Realistic-Effects]/img/splash1.png" />
+	<file src="[Realistic-Effects]/img/splash2.png" />
+	<file src="[Realistic-Effects]/img/splash3.png" />
+	<file src="[Realistic-Effects]/img/splash4.png" />
+	<file src="[Realistic-Effects]/img/splash5.png" />
+	<file src="[Realistic-Effects]/img/splash6.png" />
+	<file src="[Realistic-Effects]/img/splash_up.png" />
+	<file src="[Realistic-Effects]/img/splash_up1.png" />
+	<file src="[Realistic-Effects]/img/splash_up2.png" />
+	<file src="[Realistic-Effects]/img/splatter1.png" />
+	<file src="[Realistic-Effects]/img/splatter2.png" />
+	<file src="[Realistic-Effects]/img/splatter3.png" />
+	<file src="[Realistic-Effects]/img/splatter4.png" />
+	<file src="[Realistic-Effects]/img/water1.png" />
+	<file src="[Realistic-Effects]/img/water2.png" />
+	<file src="[Realistic-Effects]/img/water3.png" />
+	<file src="[Realistic-Effects]/img/water4.png" />
+	<file src="[Realistic-Effects]/img/waterripple1.png" />
+	<file src="[Realistic-Effects]/img/waterripple2.png" />
+	<file src="[Realistic-Effects]/img/waterripple3.png" />
+	<file src="[Realistic-Effects]/img/waterripple4.png" />
+	<file src="[Realistic-Effects]/img/waterspark.png" />
+	<file src="[Realistic-Effects]/img/waterspark_16.png" />
+	<file src="[Realistic-Effects]/img/wgush1.png" />
+	<file src="[Realistic-Effects]/img/wjet2.png" />
+	<file src="[Realistic-Effects]/img/wjet4.png" />
+	<file src="[Realistic-Effects]/img/wjet6.png" />
+	<file src="[Realistic-Effects]/img/wood1.png" />
+	<file src="[Realistic-Effects]/img/wood2.png" />
+	<file src="[Realistic-Effects]/img/wood3.png" />
+	<file src="[Realistic-Effects]/img/wood4.png" />
+	<file src="[Realistic-Effects]/img/fx2/bloodpool_64.png" />
+	<file src="[Realistic-Effects]/img/fx2/carfx1.png" />
+	<file src="[Realistic-Effects]/img/fx2/cloud1.png" />
+	<file src="[Realistic-Effects]/img/fx2/cloudhigh.png" />
+	<file src="[Realistic-Effects]/img/fx2/cloudmasked.png" />
+	<file src="[Realistic-Effects]/img/fx2/coronaheadlightline.png" />
+	<file src="[Realistic-Effects]/img/fx2/coronamoon.png" />
+	<file src="[Realistic-Effects]/img/fx2/coronareflect.png" />
+	<file src="[Realistic-Effects]/img/fx2/coronaringb.png" />
+	<file src="[Realistic-Effects]/img/fx2/coronastar.png" />
+	<file src="[Realistic-Effects]/img/fx2/finishFlag.png" />
+	<file src="[Realistic-Effects]/img/fx2/handman.png" />
+	<file src="[Realistic-Effects]/img/fx2/headlight.png" />
+	<file src="[Realistic-Effects]/img/fx2/headlight1.png" />
+	<file src="[Realistic-Effects]/img/fx2/lamp_shad_64.png" />
+	<file src="[Realistic-Effects]/img/fx2/lockon.png" />
+	<file src="[Realistic-Effects]/img/fx2/lockonFire.png" />
+	<file src="[Realistic-Effects]/img/fx2/lunar.png" />
+	<file src="[Realistic-Effects]/img/fx2/particleskid.png" />
+	<file src="[Realistic-Effects]/img/fx2/rainfx.png" />
+	<file src="[Realistic-Effects]/img/fx2/roadsignfont.png" />
+	<file src="[Realistic-Effects]/img/fx2/seabd32.png" />
+	<file src="[Realistic-Effects]/img/fx2/shad_bike.png" />
+	<file src="[Realistic-Effects]/img/fx2/shad_car.png" />
+	<file src="[Realistic-Effects]/img/fx2/shad_exp.png" />
+	<file src="[Realistic-Effects]/img/fx2/shad_heli.png" />
+	<file src="[Realistic-Effects]/img/fx2/shad_ped.png" />
+	<file src="[Realistic-Effects]/img/fx2/shad_rcbaron.png" />
+	<file src="[Realistic-Effects]/img/fx2/Sky.png" />
+	<file src="[Realistic-Effects]/img/fx2/Sky2.png" />
+	<file src="[Realistic-Effects]/img/fx2/Sky3.png" />
+	<file src="[Realistic-Effects]/img/fx2/Skysnow.png" />
+	<file src="[Realistic-Effects]/img/fx2/target256.png" />
+	<file src="[Realistic-Effects]/img/fx2/txgrassbig0.png" />
+	<file src="[Realistic-Effects]/img/fx2/txgrassbig1.png" />
+	<file src="[Realistic-Effects]/img/fx2/waterclear256.png" />
+	<file src="[Realistic-Effects]/img/fx2/waterwake.png" />
+	<file src="[Realistic-Effects]/img/fx2/white.png" />
+	<file src="[Realistic-Effects]/img/fx2/wincrack_32.png" />
+	<!--SHADER WATER-->
+
+	<script src="[Shader-Water]/c_water.lua" type="client" />
+	<file src="[Shader-Water]/water.fx" type="client" />
+	<file src="[Shader-Water]/mta-helper.fx" type="client" />
+	<file src="[Shader-Water]/images/smallnoise3d.dds" type="client" />
+	<file src="[Shader-Water]/images/cube_env256.dds" type="client" />
+	<!--SHADER TERRRENO-->
+
+
+	<script src="[Shader-Terreno]/c_detail.lua" type="client" cache="false"/>
+	<file src="[Shader-Terreno]/fx/detail.fx" type="client" />
+	<file src="[Shader-Terreno]/fx/mta-helper.fx" type="client" />
+	<file src="[Shader-Terreno]/fx/world.fx" type="client" />
+	
+	<file src="[Shader-Terreno]/shaders/media/dirty.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail04.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail22.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail29.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail35T.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail55.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail58.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail63.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/detail68.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/1.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/3.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/4.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/5.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/7.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/8.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/9.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/10.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/11.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/12.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/13.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/14.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/15.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/16.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/17.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/20.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/21.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/22.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/23.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/24.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/25.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/26.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/27.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/28.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/29.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/30.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/31.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/32.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/33.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/34.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/35.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/36.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/37.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/38.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/39.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/40.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/41.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/42.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/43.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/44.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/45.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/46.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/47.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/48.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/49.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/50.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/51.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/52.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/53.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/54.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/55.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/56.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/57.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/58.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/59.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/60.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/61.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/62.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/63.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/64.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/65.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/66.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/67.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/68.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/69.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/70.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/71.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/72.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/73.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/74.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/75.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/76.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/77.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/78.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/79.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/80.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/83.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/84.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/85.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/86.png" type="client" />
+    <file src="[Shader-Terreno]/shaders/media/87.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/block.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/des_dirttrackl.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/des_scrub1.png" type="client" />
+	<file src="[Shader-Terreno]/shaders/media/des_scrub11.png" type="client" />
+
+
+<!--SHADER CAR REFLECT-->
+	<!--This shader takes no single performance/FPS toll, achieved by unique FX techniques, and looks the closest to real ENB of all circulating shaders -->
+	<!--Start losing the idea ENB-like shaders will decrease your FPS ;) -->
+    <script src="[CarReflect]/client_carshader.lua" type="client" />
+    <script src="[CarReflect]/client_switchmode.lua" type="client" />
+    <file src="[CarReflect]/fx/car_glass.fx" type="client" />
+    <file src="[CarReflect]/fx/car_paint.fx" type="client" />
+    <file src="[CarReflect]/fx/car_glass_layer.fx" type="client" />
+    <file src="[CarReflect]/fx/car_paint_layer.fx" type="client" />
+    <file src="[CarReflect]/fx/mta-helper.fx" type="client" />
+    <file src="[CarReflect]/images/smallnoise3d.dds" type="client" />
+</meta>

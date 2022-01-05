@@ -1,0 +1,72 @@
+<meta>
+	<script src="nz_s.lua" type="server" cache="false"/>
+	<script src="nz_c.lua" type="client" cache="false"/>
+	<script src="zombies.lua" type="server" cache="false"/>
+
+	<include resource="npc_hlc" />
+
+	
+	<script src="client.lua" type="client"/>
+ 
+    <file src="skins/z1.txd" />
+    <file src="skins/z1.dff" />
+    <file src="skins/z3.txd" />
+    <file src="skins/z3.dff" />
+    <file src="skins/z4.txd" />
+    <file src="skins/z4.dff" />
+    <file src="skins/z5.txd" />
+    <file src="skins/z5.dff" />
+    <file src="skins/z6.txd" />
+    <file src="skins/z6.dff" />
+    <file src="skins/z9.txd" />
+    <file src="skins/z9.dff" />
+    <file src="skins/z10.txd" />
+    <file src="skins/z10.dff" />
+    <file src="skins/z11.txd" />
+    <file src="skins/z11.dff" />
+    <file src="skins/z12.txd" />
+    <file src="skins/z12.dff" />
+    <file src="skins/z13.txd" />
+    <file src="skins/z13.dff" />
+    <file src="skins/z14.txd" />
+    <file src="skins/z14.dff" />
+    <file src="skins/z15.txd" />
+    <file src="skins/z15.dff" />
+    <file src="skins/z16.txd" />
+    <file src="skins/z16.dff" />
+	
+	<file src="skins/wolf.dff" />
+    <file src="skins/wolf.txd" />
+    <file src="skins/bear.txd" />
+    <file src="skins/bear.dff" />
+    <file src="skins/fox.txd" />
+    <file src="skins/fox.dff" />
+	
+	<file src="skins/cat.txd" />
+    <file src="skins/cat.dff" />
+	<file src="skins/cur.txd" />
+    <file src="skins/cur.dff" />
+	<file src="skins/goat.txd" />
+    <file src="skins/goat.dff" />
+	<file src="skins/pig.txd" />
+    <file src="skins/pig.dff" />
+	
+	<file src="skins/boss_blood.txd" />
+    <file src="skins/boss_blood.dff" />
+	
+	<file src="skins/boss_1.txd" />
+    <file src="skins/boss_1.dff" />
+	<file src="skins/boss_2.txd" />
+    <file src="skins/boss_2.dff" />
+	<file src="skins/boss_3.txd" />
+    <file src="skins/boss_3.dff" />
+	<file src="skins/boss_4.txd" />
+    <file src="skins/boss_4.dff" />
+	<file src="skins/boss_5.txd" />
+    <file src="skins/boss_5.dff" />
+	
+	<file src="skins/pila.txd" />
+    <file src="skins/pila.dff" />
+
+
+</meta>

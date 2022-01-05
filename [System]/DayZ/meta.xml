@@ -1,0 +1,439 @@
+<meta>
+	<!-- Información del recurso -->
+    <info author="•Hades•" name="DayZ" version="1.0" type="gamemode" />
+	<oop>true</oop>
+
+	<!-- Fuentes -->
+	<file src="Fuentes/Absender.ttf" cache="false" />
+	<file src="Fuentes/PressStyle.ttf" cache="false"  />
+	<file src="Fuentes/WorkSans.ttf" cache="false"  />
+	<!--util-->
+	
+	<script src="LUA/Cliente/Util.lua" type="client"/>
+
+	<!-- Código del recurso -->
+    <script src="LUA/Shared/Armas.lua" type="shared" cache="false"/>
+    <script src="LUA/Shared.lua" type="shared" cache="false" />
+
+    <script src="LUA/Cliente/HUD.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Inventario.lua" type="client" cache="false" />
+    <script src="LUA/Cliente/Menu.lua" type="client" cache="false" />
+    <script src="LUA/Cliente/Modelos.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Monitor.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Nametags.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Refresco.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Selector.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Supervivencia.lua" type="client" cache="false" />
+    <script src="LUA/Cliente/Textos.lua" type="client" cache="false"/>
+    
+    <script src="LUA/Cliente/Lanzagranadas.lua" type="client" cache="false"/>
+    <script src="LUA/Cliente/Scripts.lua" type="client" cache="false"/>	
+	
+    <script src="LUA/Servidor/Cascos.lua" />
+    <script src="LUA/Servidor/Chalecos.lua" />
+    <script src="LUA/Servidor/Chat.lua" />
+    <script src="LUA/Servidor/Combustible.lua" />
+    <script src="LUA/Servidor/DB.lua" />
+    <script src="LUA/Servidor/Helicrash.lua" />
+    <script src="LUA/Servidor/Hospitales.lua" />
+    <script src="LUA/Servidor/Items.lua" />
+    <script src="LUA/Servidor/Jugador.lua" />
+    <script src="LUA/Servidor/Mochilas.lua" />
+    <script src="LUA/Servidor/Tiendas.lua" />
+    <script src="LUA/Servidor/TiendasBase.lua" />
+    <script src="LUA/Servidor/Scripts.lua" />
+    <script src="LUA/Servidor/Clima.lua" />
+	
+    <file src="Sonidos/trap.ogg" />
+
+
+	<!-- Archivos varios -->
+
+
+	<!-- Imagenes -->
+	
+	<file src="Imagenes/Icons/bandit/0.png" cache="false" />
+	<file src="Imagenes/Icons/bandit/-1000.png" cache="false" />
+	<file src="Imagenes/Icons/bandit/2500.png" cache="false" />
+	<file src="Imagenes/Icons/bandit/-2500.png" cache="false" />
+	<file src="Imagenes/Icons/bandit/3500.png" cache="false" />
+	<file src="Imagenes/Icons/bandit/5000.png" cache="false" />
+
+	<file src="Imagenes/Icons/blood/0.png" cache="false" />
+	<file src="Imagenes/Icons/blood/15.png" cache="false" />
+	<file src="Imagenes/Icons/blood/30.png" cache="false" />
+	<file src="Imagenes/Icons/blood/50.png" cache="false" />
+	<file src="Imagenes/Icons/blood/70.png" cache="false" />
+	<file src="Imagenes/Icons/blood/85.png" cache="false" />
+	<file src="Imagenes/Icons/blood/100.png" cache="false" />
+	<file src="Imagenes/Icons/blood/bleeding.png" cache="false" />
+
+	<file src="Imagenes/Icons/food/0.png" cache="false" />
+	<file src="Imagenes/Icons/food/20.png" cache="false" />
+	<file src="Imagenes/Icons/food/30.png" cache="false" />
+	<file src="Imagenes/Icons/food/50.png" cache="false" />
+	<file src="Imagenes/Icons/food/60.png" cache="false" />
+	<file src="Imagenes/Icons/food/85.png" cache="false" />
+	<file src="Imagenes/Icons/food/100.png" cache="false" />
+	<file src="Imagenes/Icons/food/hungry.png" cache="false" />
+
+	<file src="Imagenes/Icons/water/0.png" cache="false" />
+	<file src="Imagenes/Icons/water/15.png" cache="false" />
+	<file src="Imagenes/Icons/water/50.png" cache="false" />
+	<file src="Imagenes/Icons/water/60.png" cache="false" />
+	<file src="Imagenes/Icons/water/70.png" cache="false" />
+	<file src="Imagenes/Icons/water/85.png" cache="false" />
+	<file src="Imagenes/Icons/water/100.png" cache="false" />
+	<file src="Imagenes/Icons/water/sed.png" cache="false" />
+
+	<file src="Imagenes/Icons/temperature/32.png" cache="false" />
+	<file src="Imagenes/Icons/temperature/33.png" cache="false" />
+	<file src="Imagenes/Icons/temperature/34.png" cache="false" />
+	<file src="Imagenes/Icons/temperature/35.png" cache="false" />
+	<file src="Imagenes/Icons/temperature/36.png" cache="false" />
+	<file src="Imagenes/Icons/temperature/37.png" cache="false" />
+	<file src="Imagenes/Icons/temperature/38.png" cache="false" />
+
+	<file src="Imagenes/Icons/brokenbone.png" cache="false" />
+
+	<file src="Imagenes/Icons/Chaleco.png" cache="false" />
+	<file src="Imagenes/Icons/Casco.png" cache="false" />
+
+
+
+
+	
+	<file src="Imagenes/Binoculares.png" cache="false" />
+	<file src="Imagenes/Scroll.png" cache="false" />
+	<file src="Imagenes/hitmarker.png" cache="false" />
+	<file src="Imagenes/fastrun.png" cache="false" />
+	<file src="Imagenes/dmg.png" cache="false" />
+	<file src="Imagenes/Inventario/INV.png" cache="false" />
+	<file src="Imagenes/items.png" cache="false" />
+	<file src="Imagenes/inf-inv.png"/>
+
+
+	<file src="Imagenes/Crosshairs/shotgun.png" cache="false" />
+	<file src="Imagenes/Crosshairs/79.png" cache="false" />
+	<file src="Imagenes/Crosshairs/cco.png" cache="false" />
+	<file src="Imagenes/Crosshairs/holo.png" cache="false" />
+	<file src="Imagenes/Crosshairs/holoblack.png" cache="false" />
+	<file src="Imagenes/Crosshairs/center.png" cache="false" />
+	<file src="Imagenes/Crosshairs/left.png" cache="false" />
+	<file src="Imagenes/Crosshairs/right.png" cache="false" />
+	<file src="Imagenes/Crosshairs/left_pistol.png" cache="false" />
+	<file src="Imagenes/Crosshairs/right_pistol.png" cache="false" />
+	
+	<file src="Imagenes/Crosshairs/CrosshairDefault.png" cache="false" />
+	<file src="Imagenes/Crosshairs/Crosshair2.png" cache="false" />
+	<file src="Imagenes/Crosshairs/Select.png" cache="false" />
+	<file src="Imagenes/Crosshairs/cross1.png" cache="false" />
+
+
+
+
+
+	
+	<!-- Trajes masculinos -->
+	<file src="Skins/Masculino/bandidomasculino.dff" />
+	<file src="Skins/Masculino/bandidomasculino.txd" />
+	
+	<file src="Skins/Masculino/guillemasculino.dff" />
+	<file src="Skins/Masculino/guillemasculino.txd" />
+
+	<file src="Skins/Masculino/militarmasculino.dff" />
+	<file src="Skins/Masculino/militarmasculino.txd" />
+
+	<file src="Skins/Masculino/swat.dff" />
+	<file src="Skins/Masculino/swat.txd" />
+	
+	<file src="Skins/Masculino/survivor.dff" />
+	<file src="Skins/Masculino/survivor.txd" />
+	
+	<!-- Trajes femeninos -->
+	<file src="Skins/Femenino/bandidofemenino.dff" />
+	<file src="Skins/Femenino/bandidofemenino.txd" />
+
+	<file src="Skins/Femenino/guillefemenino.dff" />
+	<file src="Skins/Femenino/guillefemenino.txd" />
+	
+	<file src="Skins/Femenino/militarfemenino.dff" />
+	<file src="Skins/Femenino/militarfemenino.txd" />
+	
+	<file src="Skins/Femenino/supervivientefemenino.dff" />
+	<file src="Skins/Femenino/supervivientefemenino.txd" />
+	
+	<!-- Zombies -->
+	
+
+	<!-- Mapas -->
+
+
+	<!--
+    
+
+    <map src="Mapas/Area51.map" />
+    <map src="Mapas/Glitchs.map" />
+    <map src="Mapas/Hospitales.map" />
+    <map src="Mapas/Lobby.map" />
+    <map src="Mapas/LosSantos.map" />
+    <map src="Mapas/NavalSF.map" />NDLogin
+    -->
+	
+    <script src="Mapas/NowadayZ.lua" type="server"/>
+    
+   
+
+	<script src="Mapas/Cliente.lua" type="client" cache="false" />
+    <script src="Mapas/Servidor.lua" type="server" />
+    <!--<map src="Mapas/NowadayZ.map" cache="false" />-->
+
+	
+
+
+
+	<!-- Mochilas -->
+
+
+    <file src="Mochilas/Armada.txd" />
+    <file src="Mochilas/Armada.dff" />
+    <file src="Mochilas/Alice.txd" />
+    <file src="Mochilas/Alice.dff" />
+	<file src="Mochilas/Asalto.txd" />
+    <file src="Mochilas/Asalto.dff" />
+    <file src="Mochilas/Coyote.txd" />
+    <file src="Mochilas/Coyote.dff" />
+	<file src="Mochilas/Czech.txd" />
+    <file src="Mochilas/Czech.dff" />
+	<file src="Mochilas/Campamento.txd" />
+    <file src="Mochilas/Campamento.dff" />
+	<file src="Mochilas/NowadayZ.txd" />
+    <file src="Mochilas/NowadayZ.dff" />
+
+
+	<!-- Objetos -->
+
+	<file src="Objetos/caja.txd" />
+	<file src="Objetos/caja.dff" />
+	<file src="Objetos/1.col" />
+	<file src="Objetos/1.dff" />
+	<file src="Objetos/1.txd" />
+	<file src="Objetos/2.col" />
+	<file src="Objetos/2.dff" />
+	<file src="Objetos/2.txd" />
+	<file src="Objetos/3.col" />
+	<file src="Objetos/3.dff" />
+	<file src="Objetos/3.txd" />
+	<file src="Objetos/4.col" />
+	<file src="Objetos/4.dff" />
+	<file src="Objetos/4.txd" />
+	<file src="Objetos/Cartel.col" />
+	<file src="Objetos/Cartel.dff" />
+	<file src="Objetos/Cartel.txd" />
+	<file src="Objetos/Cuerpo.col" />
+	<file src="Objetos/Cuerpo.dff" />
+	<file src="Objetos/Cuerpo.txd" />
+	<file src="Objetos/Cuerpo1.col" />
+	<file src="Objetos/Cuerpo1.dff" />
+	<file src="Objetos/Cuerpo1.txd" />
+	<file src="Objetos/Tienda.col" />
+	<file src="Objetos/Tienda.dff" />
+	<file src="Objetos/Tienda.txd" />
+	<file src="Objetos/Crate.col" />
+	<file src="Objetos/Crate.dff" />
+	<file src="Objetos/Crate.txd" />
+	<file src="Objetos/TentFull.col" />
+	<file src="Objetos/TentFull.dff" />
+	<file src="Objetos/TentFull.txd" />
+	<file src="Objetos/AirDrop.dff" />
+	<file src="Objetos/AirDrop.txd" />
+	<file src="Objetos/Drop1.txd" />
+	<file src="Objetos/Drop1.dff" />
+	<file src="Objetos/Drop1.col" />
+	<file src="Objetos/wirefence.col" />
+	<file src="Objetos/wirefence.dff" />
+	<file src="Objetos/wirefence.txd" />
+	<file src="Objetos/mine.dff" />
+	<file src="Objetos/mine.txd" />
+	<file src="Objetos/base.col" />
+	<file src="Objetos/base.dff" />
+	<file src="Objetos/base.txd" />
+	<file src="Objetos/puertasub.col" />
+	<file src="Objetos/puertasub.dff" />
+	<file src="Objetos/puertasub.txd" />
+
+	<file src="Objetos/Vehiculos/1.col" />
+	<file src="Objetos/Vehiculos/1.dff" />
+	<file src="Objetos/Vehiculos/1.txd" />
+	<file src="Objetos/Vehiculos/2.col" />
+	<file src="Objetos/Vehiculos/2.dff" />
+	<file src="Objetos/Vehiculos/2.txd" />
+	<file src="Objetos/Vehiculos/3.col" />
+	<file src="Objetos/Vehiculos/3.dff" />
+	<file src="Objetos/Vehiculos/3.txd" />
+	<file src="Objetos/Vehiculos/4.col" />
+	<file src="Objetos/Vehiculos/4.dff" />
+	<file src="Objetos/Vehiculos/4.txd" />
+	<file src="Objetos/Vehiculos/5.col" />
+	<file src="Objetos/Vehiculos/5.dff" />
+	<file src="Objetos/Vehiculos/5.txd" />
+	<file src="Objetos/Vehiculos/6.col" />
+	<file src="Objetos/Vehiculos/6.dff" />
+	<file src="Objetos/Vehiculos/6.txd" />
+	<file src="Objetos/Vehiculos/7.col" />
+	<file src="Objetos/Vehiculos/7.dff" />
+	<file src="Objetos/Vehiculos/7.txd" />
+	<file src="Objetos/Vehiculos/8.col" />
+	<file src="Objetos/Vehiculos/8.dff" />
+	<file src="Objetos/Vehiculos/8.txd" />
+	<file src="Objetos/Vehiculos/9.col" />
+	<file src="Objetos/Vehiculos/9.dff" />
+	<file src="Objetos/Vehiculos/9.txd" />
+	<file src="Objetos/Vehiculos/10.col" />
+	<file src="Objetos/Vehiculos/10.dff" />
+	<file src="Objetos/Vehiculos/10.txd" />
+	<file src="Objetos/Vehiculos/11.col" />
+	<file src="Objetos/Vehiculos/11.dff" />
+	<file src="Objetos/Vehiculos/11.txd" />
+	<file src="Objetos/Vehiculos/12.col" />
+	<file src="Objetos/Vehiculos/12.dff" />
+	<file src="Objetos/Vehiculos/12.txd" />
+	<file src="Objetos/Vehiculos/13.col" />
+	<file src="Objetos/Vehiculos/13.dff" />
+	<file src="Objetos/Vehiculos/13.txd" />
+	<file src="Objetos/Vehiculos/14.col" />
+	<file src="Objetos/Vehiculos/14.dff" />
+	<file src="Objetos/Vehiculos/14.txd" />
+	<file src="Objetos/Vehiculos/15.col" />
+	<file src="Objetos/Vehiculos/15.dff" />
+	<file src="Objetos/Vehiculos/15.txd" />
+	<file src="Objetos/Vehiculos/16.col" />
+	<file src="Objetos/Vehiculos/16.dff" />
+	<file src="Objetos/Vehiculos/16.txd" />
+	<file src="Objetos/Vehiculos/17.col" />
+	<file src="Objetos/Vehiculos/17.dff" />
+	<file src="Objetos/Vehiculos/17.txd" />
+	<file src="Objetos/Vehiculos/18.col" />
+	<file src="Objetos/Vehiculos/18.dff" />
+	<file src="Objetos/Vehiculos/18.txd" />
+	<file src="Objetos/Vehiculos/19.col" />
+	<file src="Objetos/Vehiculos/19.dff" />
+	<file src="Objetos/Vehiculos/19.txd" />
+	<file src="Objetos/Vehiculos/20.col" />
+	<file src="Objetos/Vehiculos/20.dff" />
+	<file src="Objetos/Vehiculos/20.txd" />
+	<file src="Objetos/Vehiculos/21.col" />
+	<file src="Objetos/Vehiculos/21.dff" />
+	<file src="Objetos/Vehiculos/21.txd" />
+	<file src="Objetos/Vehiculos/22.col" />
+	<file src="Objetos/Vehiculos/22.dff" />
+	<file src="Objetos/Vehiculos/22.txd" />
+	<file src="Objetos/Vehiculos/23.col" />
+	<file src="Objetos/Vehiculos/23.dff" />
+	<file src="Objetos/Vehiculos/23.txd" />
+	<file src="Objetos/Vehiculos/24.col" />
+	<file src="Objetos/Vehiculos/24.dff" />
+	<file src="Objetos/Vehiculos/24.txd" />
+	<file src="Objetos/Vehiculos/25.col" />
+	<file src="Objetos/Vehiculos/25.dff" />
+	<file src="Objetos/Vehiculos/25.txd" />
+	<file src="Objetos/Vehiculos/26.col" />
+	<file src="Objetos/Vehiculos/26.dff" />
+	<file src="Objetos/Vehiculos/26.txd" />
+	<file src="Objetos/Vehiculos/27.col" />
+	<file src="Objetos/Vehiculos/27.dff" />
+	<file src="Objetos/Vehiculos/27.txd" />
+	<file src="Objetos/Vehiculos/28.col" />
+	<file src="Objetos/Vehiculos/28.dff" />
+	<file src="Objetos/Vehiculos/28.txd" />
+	<file src="Objetos/Vehiculos/29.col" />
+	<file src="Objetos/Vehiculos/29.dff" />
+	<file src="Objetos/Vehiculos/29.txd" />
+	<file src="Objetos/Vehiculos/30.col" />
+	<file src="Objetos/Vehiculos/30.dff" />
+	<file src="Objetos/Vehiculos/30.txd" />
+	<file src="Objetos/Vehiculos/31.col" />
+	<file src="Objetos/Vehiculos/31.dff" />
+	<file src="Objetos/Vehiculos/31.txd" />
+	<file src="Objetos/Vehiculos/32.col" />
+	<file src="Objetos/Vehiculos/32.dff" />
+	<file src="Objetos/Vehiculos/32.txd" />
+	<file src="Objetos/Vehiculos/33.col" />
+	<file src="Objetos/Vehiculos/33.dff" />
+	<file src="Objetos/Vehiculos/33.txd" />
+	<file src="Objetos/Vehiculos/34.col" />
+	<file src="Objetos/Vehiculos/34.dff" />
+	<file src="Objetos/Vehiculos/34.txd" />
+	<file src="Objetos/Vehiculos/35.col" />
+	<file src="Objetos/Vehiculos/35.dff" />
+	<file src="Objetos/Vehiculos/35.txd" />
+	<file src="Objetos/Vehiculos/36.col" />
+	<file src="Objetos/Vehiculos/36.dff" />
+	<file src="Objetos/Vehiculos/36.txd" />
+	<file src="Objetos/Vehiculos/37.col" />
+	<file src="Objetos/Vehiculos/37.dff" />
+	<file src="Objetos/Vehiculos/37.txd" />
+	<file src="Objetos/Vehiculos/38.col" />
+	<file src="Objetos/Vehiculos/38.dff" />
+	<file src="Objetos/Vehiculos/38.txd" />
+	<file src="Objetos/Vehiculos/39.col" />
+	<file src="Objetos/Vehiculos/39.dff" />
+	<file src="Objetos/Vehiculos/39.txd" />
+	<file src="Objetos/Vehiculos/40.col" />
+	<file src="Objetos/Vehiculos/40.dff" />
+	<file src="Objetos/Vehiculos/40.txd" />
+	<file src="Objetos/Vehiculos/41.col" />
+	<file src="Objetos/Vehiculos/41.dff" />
+	<file src="Objetos/Vehiculos/41.txd" />
+	<file src="Objetos/Vehiculos/42.col" />
+	<file src="Objetos/Vehiculos/42.dff" />
+	<file src="Objetos/Vehiculos/42.txd" />
+
+	<file src="Objetos/Chalecos/Tactico.dff" />
+	<file src="Objetos/Chalecos/Tactico.txd" />
+
+	<file src="Objetos/Cascos/Militar.dff" />
+	<file src="Objetos/Cascos/Militar.txd" />
+	   
+	<file src="Objetos/trap_open.txd" />
+    <file src="Objetos/trap_open.dff" />
+    <file src="Objetos/trap_open.col" />
+    <file src="Objetos/trap_closed.dff" />
+    <file src="Objetos/trap_closed.col" />
+
+	<file src="Objetos/luz.dff" />
+
+
+
+	<!-- Sonidos -->
+
+	<file src="Sonidos/auth/1.mp3" />
+	<file src="Sonidos/comendo.ogg" />
+    <file src="Sonidos/bebendo.ogg" /> 
+    <file src="Sonidos/desmontartenda.ogg" /> 
+    <file src="Sonidos/brokenbone.mp3" /> 
+	<file src="Sonidos/repair.mp3" /> 
+    <file src="Sonidos/action_tentpack.ogg" /> 
+    <file src="Sonidos/action_refuel.ogg" />
+    <file src="Sonidos/action_refill.ogg" />
+    <file src="Sonidos/Headshot.wav" /> 
+    <file src="Sonidos/Hit.wav" /> 
+    <file src="Sonidos/medico.wav" /> 
+    <file src="Sonidos/equipar1.ogg" /> 
+    <file src="Sonidos/equipar2.ogg" />
+    <file src="Sonidos/ropa.wav" /> 
+	<file src="Sonidos/bengala.ogg" /> 
+    <file src="Sonidos/vision.ogg" />
+	<file src="Sonidos/fogata.ogg" />
+    <file src="Sonidos/Lanzagranadas.wav" />
+	<file src="Sonidos/Lanzagranadas_Recarga.wav" />
+	<file src="Sonidos/hover.wav" />
+	
+	<!-- Funciones exportadas -->
+	<export function='getWeaponData' type='shared'/>
+	<export function='mapaactivar' type='shared'/>
+	<export function='mapadesactivar' type='shared'/>
+	<!--<include resource="mapyradar" />
+	<include resource="shader_circle" />-->
+
+</meta>

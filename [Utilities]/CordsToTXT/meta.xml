@@ -1,0 +1,5 @@
+<meta>
+	<info author="-Hades-" version="1.0.2" name="CordsToTXT" description="Sistema de almacenamiento de cordenadas a TXT" type="script" /> 
+	<script src="client.lua" type="client"/>
+	<oop>true</oop>
+</meta>

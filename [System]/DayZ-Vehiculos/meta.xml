@@ -1,0 +1,20 @@
+<meta>
+    <info author="" name="DayZ-Vehiculos" description="Sistema de vehiculos DayZ" version="1.0" type="script" />
+	<oop>true</oop>
+
+    <script src="Shared.lua" type="shared" cache="false" />
+    <script src="vehiculos.lua" type="server" />
+    <script src="Cliente.lua" type="client" cache="false" />
+    <script src="Servidor.lua" type="server" />
+
+    <file src="Fuentes/WorkSans.ttf" />
+
+	<file src="images/fuel.png" cache="false" />
+	<file src="images/engine.png" cache="false" />
+	<file src="images/gps.png" cache="false" />
+	<file src="images/health.png" cache="false" />
+	<file src="images/lock.png" cache="false" />
+	<file src="images/nitro.png" cache="false" />
+	<file src="images/speed.png" cache="false" />
+	<file src="images/tire.png" cache="false" />
+</meta>

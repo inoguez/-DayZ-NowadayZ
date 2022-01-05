@@ -1,0 +1,57 @@
+<meta>
+	<info author="" name="DayZ-Items" type="script" version="1.1" />
+	<oop>true</oop>
+
+	<file src="Modelos/arrow.dff"/>
+	<file src="Modelos/arrow.txd"/>
+	<file src="Modelos/akmag.dff"/>
+	<file src="Modelos/akmag.txd"/>
+	<file src="Modelos/bandage.dff"/>
+	<file src="Modelos/bandage.txd"/>
+	<file src="Modelos/car_wheel.dff"/>
+	<file src="Modelos/car_wheel.txd"/>
+	<file src="Modelos/cookedmeat.dff"/>
+	<file src="Modelos/cookedmeat.txd"/>
+	<file src="Modelos/engine.dff"/>
+	<file src="Modelos/engine.txd"/>
+	<file src="Modelos/first_aid_kit.dff"/>
+	<file src="Modelos/first_aid_kit.txd"/>
+	<file src="Modelos/g17m9sdmag.dff"/>
+	<file src="Modelos/g17m9sdmag.txd"/>
+	<file src="Modelos/gps.dff"/>
+	<file src="Modelos/gps.txd"/>
+	<file src="Modelos/heat_pack.dff"/>
+	<file src="Modelos/heat_pack.txd"/>
+	<file src="Modelos/jerrycan.dff"/>
+	<file src="Modelos/jerrycan.txd"/>
+	<file src="Modelos/map.dff"/>
+	<file src="Modelos/map.txd"/>
+	<file src="Modelos/matches.dff"/>
+	<file src="Modelos/matches.txd"/>
+	<file src="Modelos/morphine.dff"/>
+	<file src="Modelos/morphine.txd"/>
+	<file src="Modelos/pain_killers.dff"/>
+	<file src="Modelos/pain_killers.txd"/>
+	<file src="Modelos/pasta_can.dff"/>
+	<file src="Modelos/pasta_can.txd"/>
+	<file src="Modelos/stanag.dff"/>
+	<file src="Modelos/stanag.txd"/>
+	<file src="Modelos/tent.dff"/>
+	<file src="Modelos/tent.txd"/>
+	<file src="Modelos/toolbox.dff"/>
+	<file src="Modelos/toolbox.txd"/>
+	<file src="Modelos/watch.dff"/>
+	<file src="Modelos/watch.txd"/>
+	<file src="Modelos/water_bottle.dff"/>
+	<file src="Modelos/water_bottle.txd"/>
+	<file src="Modelos/wfkit.dff"/>
+	<file src="Modelos/wfkit.txd"/>
+	<file src="Modelos/woodpile.dff"/>
+	<file src="Modelos/woodpile.txd"/>
+
+	<script src="Modelos.lua" type="client" cache="false" />
+	<script src="Definiciones.lua" type="server" />
+	<script src="ItemsPosiciones.lua" type="server"/>
+	<script src="Items.lua" type="server"/>
+	
+</meta>

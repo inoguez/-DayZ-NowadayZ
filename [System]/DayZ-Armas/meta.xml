@@ -1,0 +1,158 @@
+<meta>
+	<info author="Hades" version="1.1" type="script" />
+	<oop>true</oop>
+
+	<script src="Cliente.lua" type="client" cache="false" />
+	<script src="Servidor.lua" />
+	<script src="Skins.lua" type="client" cache="false" />
+
+	
+	<file src="Armas/full.txd" />
+	<file src="Armas/full.dff" />
+	<!--
+	<file src="Armas/Melee/Cuchillo.txd" />
+	<file src="Armas/Melee/Cuchillo.dff" />
+	<file src="Armas/Melee/Hacha.txd" />
+	<file src="Armas/Melee/Hacha.dff" />
+	<file src="Armas/Melee/Machete.txd" />
+	<file src="Armas/Melee/Machete.dff" />
+	<file src="Armas/Melee/Palanca.txd" />
+	<file src="Armas/Melee/Palanca.dff" />
+
+	<file src="Armas/Pistolas/Desert.txd" />
+	<file src="Armas/Pistolas/Desert.dff" />
+	<file src="Armas/Pistolas/G17.txd" />
+	<file src="Armas/Pistolas/G17.dff" />
+	<file src="Armas/Pistolas/M9.txd" />
+	<file src="Armas/Pistolas/M9.dff" />
+	<file src="Armas/Pistolas/M9SD.txd" />
+	<file src="Armas/Pistolas/M9SD.dff" />
+	<file src="Armas/Pistolas/M1911.txd" />
+	<file src="Armas/Pistolas/M1911.dff" />
+
+	<file src="Armas/SMG/MP5A5.txd" />
+	<file src="Armas/SMG/MP5A5.dff" />
+	<file src="Armas/SMG/MP5SD6.txd" />
+	<file src="Armas/SMG/MP5SD6.dff" />
+	<file src="Armas/SMG/BizonSD.txd" />
+	<file src="Armas/SMG/BizonSD.dff" />
+	<file src="Armas/SMG/P90.txd" />
+	<file src="Armas/SMG/P90.dff" />
+
+	<file src="Armas/Asalto/AR-15.txd" />
+	<file src="Armas/Asalto/AR-15.dff" />
+
+	
+	<file src="Armas/Asalto/ACR.txd" />
+	<file src="Armas/Asalto/ACR.dff" />
+	<file src="Armas/Asalto/AK47Vulcan.txd" />
+	<file src="Armas/Asalto/AK47Vulcan.dff" />
+	<file src="Armas/Asalto/AK74.txd" />
+	<file src="Armas/Asalto/AK74.dff" />
+	<file src="Armas/Asalto/AK74GP25.txd" />
+	<file src="Armas/Asalto/AK74GP25.dff" />
+	<file src="Armas/Asalto/AK-107.txd" />
+	<file src="Armas/Asalto/AK-107.dff" />
+	<file src="Armas/Asalto/AK-107GL.txd" />
+	<file src="Armas/Asalto/AK-107GL.dff" />
+	<file src="Armas/Asalto/AK-107GLPSO.txd" />
+	<file src="Armas/Asalto/AK-107GLPSO.dff" />
+	<file src="Armas/Asalto/AK-107PSO.txd" />
+	<file src="Armas/Asalto/AK-107PSO.dff" />
+	<file src="Armas/Asalto/AKM.txd" />
+	<file src="Armas/Asalto/AKM.dff" />
+	<file src="Armas/Asalto/AKS.txd" />
+	<file src="Armas/Asalto/AKS.dff" />
+	<file src="Armas/Asalto/AKS-74Kobra.txd" />
+	<file src="Armas/Asalto/AKS-74Kobra.dff" />
+	<file src="Armas/Asalto/AKSGold.txd" />
+	<file src="Armas/Asalto/AKSGold.dff" />
+	<file src="Armas/Asalto/G36.txd" />
+	<file src="Armas/Asalto/G36.dff" />
+	<file src="Armas/Asalto/G36A.txd" />
+	<file src="Armas/Asalto/G36A.dff" />
+	<file src="Armas/Asalto/G36C.txd" />
+	<file src="Armas/Asalto/G36C.dff" />
+	<file src="Armas/Asalto/G36CSD.txd" />
+	<file src="Armas/Asalto/G36CSD.dff" />
+	<file src="Armas/Asalto/G36K.txd" />
+	<file src="Armas/Asalto/G36K.dff" />
+	<file src="Armas/Asalto/M4A1.txd" />
+	<file src="Armas/Asalto/M4A1.dff" />
+	<file src="Armas/Asalto/M4A1CCO.txd" />
+	<file src="Armas/Asalto/M4A1CCO.dff" />
+	<file src="Armas/Asalto/M4A1CCOSD.txd" />
+	<file src="Armas/Asalto/M4A1CCOSD.dff" />
+	<file src="Armas/Asalto/M4A3CCO.txd" />
+	<file src="Armas/Asalto/M4A3CCO.dff" />
+
+	<file src="Armas/Escopetas/AA12.txd" />
+	<file src="Armas/Escopetas/AA12.dff" />
+
+	<file src="Armas/LMG/M240.txd" />
+	<file src="Armas/LMG/M240.dff" />
+	<file src="Armas/LMG/M249.txd" />
+	<file src="Armas/LMG/M249.dff" />
+	<file src="Armas/LMG/Mk48.txd" />
+	<file src="Armas/LMG/Mk48.dff" />
+	<file src="Armas/LMG/PKM.txd" />
+	<file src="Armas/LMG/PKM.dff" />
+	<file src="Armas/LMG/PKP.txd" />
+	<file src="Armas/LMG/PKP.dff" />
+	<file src="Armas/LMG/RPD.txd" />
+	<file src="Armas/LMG/RPD.dff" />
+
+	<file src="Armas/Rifles/AS50.txd" />
+	<file src="Armas/Rifles/AS50.dff" />
+	<file src="Armas/Rifles/AWP.txd" />
+	<file src="Armas/Rifles/AWP.dff" />
+	<file src="Armas/Rifles/DMR.txd" />
+	<file src="Armas/Rifles/DMR.dff" />
+	<file src="Armas/Rifles/HecateII.txd" />
+	<file src="Armas/Rifles/HecateII.dff" />
+	<file src="Armas/Rifles/KSVK.txd" />
+	<file src="Armas/Rifles/KSVK.dff" />
+	<file src="Armas/Rifles/M107.txd" />
+	<file src="Armas/Rifles/M107.dff" />
+	<file src="Armas/Rifles/SVDCamo.txd" />
+	<file src="Armas/Rifles/SVDCamo.dff" />
+
+	<file src="Armas/Otros/Binoculares.txd" />
+	<file src="Armas/Otros/Binoculares.dff" />-->
+
+	<file src="Armas/Otros/paracx.txd" />
+
+	<file src="Sonidos/AA12.mp3" cache="false" />
+	<file src="Sonidos/ACR.mp3" cache="false" />
+	<file src="Sonidos/AK-47.mp3" cache="false" />
+	<file src="Sonidos/AK-74.mp3" cache="false" />
+	<file src="Sonidos/AK-107.mp3" cache="false" />
+	<file src="Sonidos/AKM.mp3" cache="false" />
+	<file src="Sonidos/AKS.mp3" cache="false" />
+	<file src="Sonidos/AKVulcan.mp3" cache="false" />
+	<file src="Sonidos/AS50.mp3" cache="false" />
+	<file src="Sonidos/DMR.mp3" cache="false" />
+	<file src="Sonidos/G17.mp3" cache="false" />
+	<file src="Sonidos/G36.mp3" cache="false" />
+	<file src="Sonidos/Hecate.mp3" cache="false" />
+	<file src="Sonidos/KSVK.mp3" cache="false" />
+	<file src="Sonidos/M4A1.mp3" cache="false" />
+	<file src="Sonidos/M4A1SD.mp3" cache="false" />
+	<file src="Sonidos/M4A3.mp3" cache="false" />
+	<file src="Sonidos/M9.mp3" cache="false" />
+	<file src="Sonidos/M107.mp3" cache="false" />
+	<file src="Sonidos/M240.mp3" cache="false" />
+	<file src="Sonidos/M249 Saw.mp3" cache="false" />
+	<file src="Sonidos/M1911.mp3" cache="false" />
+	<file src="Sonidos/Mk48.mp3" cache="false" />
+	<file src="Sonidos/MP5A5.mp3" cache="false" />
+	<file src="Sonidos/PKM.mp3" cache="false" />
+	<file src="Sonidos/PKP.mp3" cache="false" />
+	<file src="Sonidos/SVD.mp3" cache="false" />
+	<file src="Sonidos/RPD.mp3" cache="false" />
+	<file src="Sonidos/AWP.mp3" cache="false" />
+	<file src="Sonidos/P90.mp3" cache="false" />
+
+
+	<file src="Sonidos/AR-15.mp3" cache="false" />
+</meta>

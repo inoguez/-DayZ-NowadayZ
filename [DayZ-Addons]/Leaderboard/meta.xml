@@ -1,0 +1,14 @@
+<meta>
+	<script src="client.lua" type="client" cache="false" />
+	<script src="server.lua" type="server"/>
+	<export function="getPlayerTOPKills" type="server" />
+	<export function="getPlayerTOPDeaths" type="server" />
+	<export function="getAccountTOPKills" type="server" />
+	<export function="getAccountTOPDeaths" type="server" />
+	<file src="Fuentes/Roboto.ttf" />
+
+	<export function="addPlayeEXP" type="server" />
+	<export function="addPlayeLVL" type="server" />
+	<download_priority_group>0</download_priority_group>
+	<oop>true</oop>
+</meta>
