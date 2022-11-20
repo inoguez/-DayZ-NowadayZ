@@ -135,9 +135,6 @@ function Vehiculos.Cargar()
 end
 
 function Vehiculos.Reaparecer(Elemento)
-	if Elemento then
-		source = Elemento
-	end
 
 	setTimer(function(source)
 	respawnVehicle(source)
